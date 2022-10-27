@@ -1,0 +1,285 @@
+
+body{
+    background-color: #EBECF0;
+}
+
+body, p, input, textarea, button{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.2px;
+    font-size: 16px;
+}
+
+div, p{
+    color: #BABECC;
+    text-shadow:1px 1px 1px #FFF;
+}
+
+/* Header starts*/
+
+.header-container{
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.button{
+    cursor: pointer;
+    outline: none;
+}
+
+.button-text{
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.avatar{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    font-size: 22px;
+    box-shadow:  inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+    border-radius: 50%;
+    text-transform: uppercase;
+    margin-left: 8px;
+    text-align: center;
+    line-height: 36px;
+}
+
+/* Header ends*/
+
+/* Task starts*/
+
+.container{
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+
+.authorization{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 15px;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.form-title{
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 8px;
+}
+
+.authorization form{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-settings{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+label{
+    display: block;
+    margin-bottom: 16px*1.5;
+    width: 100%;
+}
+
+.text-settings:last-of-type{
+    margin-bottom: 42px;
+}
+
+form {
+    padding: 16px;
+    width: 16px*20;
+    margin: 0 auto;
+}
+
+button{
+    background-color: #EBECF0;
+    border: 0;
+    outline: 0;
+    text-shadow: 1px 1px 0 #FFF;
+}
+
+input {
+    margin-right: 16px/2;
+    box-shadow:  inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+  
+
+    padding: 8px;
+    background-color: #EBECF0;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    text-shadow: 1px 1px 0 #FFF;
+    font-size: 16px;
+    color:#61677C;
+}
+  
+input:focus {
+    box-shadow:  inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+    
+}
+
+.input-error{
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    font-size: 14px;
+    color: red;
+}
+
+button{
+    color:#61677C;
+    font-weight: bold;
+    box-shadow: -5px -5px 20px #FFF,  5px 5px 20px #BABECC;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+}
+    
+button:hover {
+     box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+}    
+
+.button-form{
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500px;
+    background-color: transparent;
+    align-self: flex-end;
+}
+
+
+.board{
+    padding-top: 16px;
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.task-form{
+    padding: 32px;
+    border-radius: 10px;
+    align-self: start;
+}
+
+.task-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Task ends */
+
+/* Card starts */
+
+.task-card{
+    box-shadow:  inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+    position: relative;
+    padding: 24px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.task-finished{
+    text-decoration: line-through;
+    }
+
+.task-title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.task-description{
+    margin-bottom: 15px;
+}
+
+.time-tracker{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.time-button{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    border: none;
+    margin-right: 10px;
+    line-height: 5px;
+    
+    cursor: pointer;
+    font-size: 10px;
+}
+
+
+.time-button:disabled{
+    cursor: not-allowed;
+    background: grey;
+}
+
+.button-play{
+    background-color: rgba(35, 167, 57, 0.5);
+} 
+
+.button-stop{
+    background-color: rgba(225, 5, 57, 0.5);
+}
+
+.date-task{
+    color: grey;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.button-small{
+    padding: 5px 5px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.button-task-delete{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+
+
+/* Card ends */
+
+@media(max-width:750px){
+    .board{
+        grid-template-columns: 1fr;
+    }
+}
